@@ -1,57 +1,47 @@
-# PLP Bookstore MongoDB Implementation
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19914579&assignment_repo_type=AssignmentRepo)
+# MongoDB Fundamentals Assignment
 
-## Overview
+This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
 
-The **PLP Bookstore MongoDB Implementation** is a complete example of a bookstore database utilizing MongoDB. It covers fundamental database operations, such as CRUD (Create, Read, Update, Delete), and extends to advanced features like data aggregation, query optimization, and performance analysis.
+## Assignment Overview
 
-This project serves as a robust reference for managing bookstore data with MongoDB, providing clear insights into both essential and advanced operations.
+You will:
+1. Set up a MongoDB database
+2. Perform basic CRUD operations
+3. Write advanced queries with filtering, projection, and sorting
+4. Create aggregation pipelines for data analysis
+5. Implement indexing for performance optimization
 
----
+## Getting Started
 
-## Features
+1. Accept the GitHub Classroom assignment invitation
+2. Clone your personal repository that was created by GitHub Classroom
+3. Install MongoDB locally or set up a MongoDB Atlas account
+4. Run the provided `insert_books.js` script to populate your database
+5. Complete the tasks in the assignment document
 
-- **Full CRUD Operations**: Create, Read, Update, and Delete book documents
-- **Advanced Querying**: Support for complex filtering, sorting, and pagination
-- **Data Aggregation**: Powerful grouping and statistical analysis capabilities
-- **Performance Optimization**: Creation of indexes and query analysis to ensure fast performance
-- **Structured Output**: Clean, readable console formatting with execution statistics
+## Files Included
 
----
+- `Week1-Assignment.md`: Detailed assignment instructions
+- `insert_books.js`: Script to populate your MongoDB database with sample book data
 
-## Setup Instructions
+## Requirements
 
-### Prerequisites
+- Node.js (v18 or higher)
+- MongoDB (local installation or Atlas account)
+- MongoDB Shell (mongosh) or MongoDB Compass
 
-To run this project, ensure the following tools are installed:
+## Submission
 
-- **Node.js** v14+ (for backend execution)
-- **npm** (included with Node.js for package management)
-- **MongoDB Atlas cluster** or a **local MongoDB instance**
+Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
 
-### Installation
+1. Complete all tasks in the assignment
+2. Add your `queries.js` file with all required MongoDB queries
+3. Include a screenshot of your MongoDB database
+4. Update the README.md with your specific setup instructions
 
-1. **Clone the repository**:
+## Resources
 
-    ```bash
-    git clone https://github.com/yourusername/plp-bookstore-mongodb.git
-    cd plp-bookstore-mongodb
-    ```
-
-2. **Install dependencies**:
-
-    ```bash
-    npm install
-    ```
-
-3. **Configure your MongoDB connection**:
-    - Open the `queries.js` file and update the connection URI to point to your MongoDB Atlas cluster or local MongoDB instance.
-    - **For production environments**, ensure you use environment variables for sensitive information like your database credentials.
-
----
-
-## Usage
-
-To run the full MongoDB implementation, execute the script by running:
-
-```bash
-node queries.js
+- [MongoDB Documentation](https://docs.mongodb.com/)
+- [MongoDB University](https://university.mongodb.com/)
+- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
