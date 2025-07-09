@@ -1,47 +1,105 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19914579&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+PLP Bookstore MongoDB Implementation
+Overview
+This project demonstrates a complete MongoDB implementation for a bookstore database, covering all essential database operations from basic CRUD to advanced analytics and performance optimization.
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+Features
+Full CRUD Operations: Create, read, update, and delete book documents
 
-## Assignment Overview
+Advanced Querying: Complex filtering, sorting, and pagination
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+Data Aggregation: Powerful grouping and statistical analysis
 
-## Getting Started
+Performance Optimization: Index creation and query analysis
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+Structured Output: Clean console formatting with execution statistics
 
-## Files Included
+Setup Instructions
+Prerequisites
+Node.js v14+
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+npm (included with Node.js)
 
-## Requirements
+MongoDB Atlas cluster or local MongoDB instance
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+Installation
+Clone the repository:
 
-## Submission
+bash
+git clone https://github.com/yourusername/plp-bookstore-mongodb.git
+cd plp-bookstore-mongodb
+Install dependencies:
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+bash
+npm install
+Configure your MongoDB connection:
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+Update the connection URI in queries.js
 
-## Resources
+For security, use environment variables in production
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+Usage
+Run the complete implementation:
+
+bash
+node queries.js
+What It Does
+The script executes all operations in this sequence:
+
+Creates sample book data
+
+Performs basic CRUD operations
+
+Runs advanced queries
+
+Executes aggregation pipelines
+
+Creates indexes and analyzes performance
+
+Customization
+Modify these parameters in queries.js to test different scenarios:
+
+javascript
+// Example customizations:
+await findBooksByGenre("Science Fiction");
+await findBooksPublishedAfter(2020);
+await updateBookPrice("The Hobbit", 25.99);
+Performance Tips
+Indexing: Create indexes on frequently queried fields
+
+Projection: Only request necessary fields
+
+Pagination: Implement skip/limit for large datasets
+
+Batch Operations: Use bulk writes for multiple documents
+
+Best Practices
+Security:
+
+Use environment variables for credentials
+
+Implement proper user roles
+
+Enable network IP whitelisting
+
+Maintenance:
+
+Regularly review query performance
+
+Remove unused indexes
+
+Monitor database growth
+
+Development:
+
+Use the explain() method to analyze queries
+
+Implement comprehensive error handling
+
+Document all schema designs
+
+Support
+For assistance or to report issues:
+
+Open an issue in the repository
+
+Contact the project maintainer
